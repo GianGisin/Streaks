@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    margin: 0px;
+    background-color: #d3f5f0;
+}
+
+table{
+    position: absolute;
+    height: 90%;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0px;
+
+    border-top: 8px solid #9ac5f5;
+
+}
+
+
+#titleBar{
+    background-color: #6996c9;
+}
+
+#strSelect{
+    height: 40px;
+    width: 150px;
+    background-color: #6996c9;
+    text-align-last: center;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    font-size: 20px; 
+}
+
