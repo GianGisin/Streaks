@@ -1,0 +1,14 @@
+{
+  "name": "streaks",
+  "version": "1.0.0",
+  "description": "A simple tool to keep an eye on your streak, whatever it may be.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Gian Gisin",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.3"
+  }
+}
