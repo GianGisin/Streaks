@@ -10,5 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^8.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GianGisin/Streaks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GianGisin/Streaks/issues"
+  },
+  "homepage": "https://github.com/GianGisin/Streaks#readme"
 }
