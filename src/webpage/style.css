@@ -1,5 +1,4 @@
 body{
-    text-align: center;
     margin: 0px;
     background-color: #d3f5f0;
 }
@@ -33,7 +32,20 @@ table{
     font-size: 20px; 
 }
 
-#contain{
-    position: relative;
+
+
+#streakcontainer {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+}
+#timecontainer {
+    float: right;
+    text-align: center;
+    width: 50%;
+    right: 50%;
 }
 
+#specStreak{
+    padding-top: 70px;
+}
