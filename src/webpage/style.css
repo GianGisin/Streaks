@@ -1,18 +1,10 @@
 body{
     margin: 0px;
-    background-color: #d3f5f0;
+    background-color: #c2defc;
+    font-family: Arial;
 }
 
-table{
-    position: absolute;
-    height: 90%;
-    vertical-align: middle;
-    width: 100%;
-    margin: 0px;
 
-    border-top: 8px solid #9ac5f5;
-
-}
 
 
 #titleBar{
@@ -48,4 +40,27 @@ table{
 
 #specStreak{
     padding-top: 70px;
+    border-top: 5px solid #9ac5f5;
+}
+
+#buttoncontainer{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+#startbutton {
+    border: none;
+    font-size: large;
+    padding: 10px 30px;
+    background-color: #ffffff;
+}
+
+#stopwatch{
+    position: relative;
+    font-size: 80px;
+    padding-top: 9%;
+    font-family: Arial;
+    font-weight: bold;
+    color: #6996c9;
 }
