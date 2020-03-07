@@ -1,3 +1,4 @@
+
 function startButtonPressed(){
     if(document.getElementById('startbutton').innerHTML == 'Start'){
         document.getElementById('startbutton').innerHTML = 'Stop';
@@ -17,6 +18,7 @@ var totalTime = 0;
 function startTimer(){
     Timer = setInterval(this.tick, 1000);
     document.getElementById('stopwatch').innerHTML = "00:00:00"
+    writeToFile('lastdayplayed', null /*date of today*/);
 }
 
 function tick() {
@@ -56,5 +58,56 @@ function doThis(){
     alert("This is where you'd be able to select your streak")
 }
 
-//hello
+var json = require('../streaks/streak1.json')
+
+var today = new Date()
+today.setHours(0);
+today.setMinutes(0);
+today.setSeconds(0, 0);
+
+
+
+var streakName = json[0].name;
+var streakCount = json[0].count;
+var lastTimePlayed = json[0].lastdayplayed;
+var streakTime = parseInt(json[0].totaltime);
+
+//TODO determine if user has skipped
+var hasSkipped = false;
+
+
+function writedocument(id, set){
+    document.getElementById(id).innerHTML = set;
+}
+
+
+function load (){
+    
+    if(!hasSkipped){
+        streakCount++;
+        writedocument('streakcount', streakCount);
+        writeToFile('count', streakCount);
+    }
+    
+    
+    totalTime += streakTime;
+    if(totalTime/3600 >= 1){
+        document.getElementById('time').innerHTML = Math.round(totalTime / 3600 * 10) / 10 + "hours";
+
+    }else if(totalTime/60 >= 1){
+        document.getElementById('time').innerHTML = Math.round(totalTime / 60 * 10) / 10 + "mins";
+    }else{
+        document.getElementById('time').innerHTML = totalTime + "seconds";
+    }
+
+}
+
+
+function writeToFile(select, replace){
+    //TODO Write to file
+    //do things
+}
+
+
+
 
